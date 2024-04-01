@@ -2,14 +2,193 @@
  "cells": [
   {
    "cell_type": "code",
+   "execution_count": 2,
+   "id": "ff6f5485-c897-4e9a-921f-a7d3479cc9a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 1234\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1234: 0A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 5678\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5678: 0A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 1278\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1278: 0A1B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 1256\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1256: 0A1B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 2356\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2356: 0A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 3467\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3467: 0A3B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 3468\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3468: 0A4B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 4386\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4386: 0A4B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 8643\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8643: 2A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 8634\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8634: 0A4B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 6843\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6843: 4A0B\n",
+      "答對了！\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"BC0210011羅士勛\")\n",
+    "import random\n",
+    "answer = random.sample(range(1, 10), 4)\n",
+    "a = b = n = 0\n",
+    "while a!=4:\n",
+    "    a = b = n = 0\n",
+    "    user = list(input('輸入四00個數字：'))\n",
+    "    for i in user:\n",
+    "        if int(user[n]) == answer[n]:\n",
+    "            a += 1\n",
+    "        else:\n",
+    "            if int(i) in answer:\n",
+    "                b += 1\n",
+    "        n += 1\n",
+    "    output = ','.join(user).replace(',','')\n",
+    "    print(f'{output}: {a}A{b}B')\n",
+    "print(\"答對了！\")"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "bfa57be0-66e7-466e-9528-4cfd3be02695",
+   "id": "0123d9c9-279b-412c-99a6-09a6704fe268",
    "metadata": {},
    "outputs": [],
-   "source": [
-    "print(\"ID: 123456789\")\n",
-    "print(\"1A2B 作業真簡單\")"
-   ]
+   "source": []
   }
  ],
  "metadata": {
